@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/back_ucl_sport"/>
+
+
+
+    <TextView
+        android:id="@+id/Login_uclText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorUclWhite"
+        android:text="UCL"
+        android:textStyle="bold"
+        android:textSize="100sp"/>
+
+    <View
+        android:layout_width="160dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"
+        android:layout_alignBottom="@+id/Login_uclText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Login_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:text="Sports"
+        android:textColor="@color/colorUclWhite"
+        android:textSize="60sp" />
+
+    <!-- ********************** Login Email ******************* -->
+
+    <EditText
+        android:id="@+id/Login_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Login"
+        android:gravity="center"
+        android:layout_marginTop="225dp"
+        android:layout_gravity="center"
+        android:background="#A9D0F5"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        />
+
+    <!-- ********************** Password ********************** -->
+
+
+    <EditText
+        android:id="@+id/Password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login_et"
+        android:layout_marginTop="5dp"
+        android:background="#A9D0F5"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"/>
+
+    <!-- ********************** Store access ********************** -->
+
+    <CheckBox
+        android:id="@+id/keep_alive_cb"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password_et"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Keep-alive session"
+        android:checked="false"/>
+
+    <!-- **********************  fin access ********************** -->
+
+    <!-- ********************* Button Sign in ****************** -->
+
+    <Button
+        android:id="@+id/Sign_in_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/keep_alive_cb"
+        android:layout_alignRight="@+id/keep_alive_cb"
+        android:layout_below="@+id/keep_alive_cb"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#1F3260"
+        android:foreground="@drawable/ripple_effect"
+        android:text="Se connecter"
+        android:textColor="#FFFFFF" />
+
+    <!-- ********************* Button Register ****************** -->
+
+    <Button
+        android:id="@+id/Register_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/keep_alive_cb"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#1F3260"
+        android:foreground="@drawable/ripple_effect"
+        android:orientation="horizontal"
+        android:text="S'inscrire"
+        android:textColor="#FFFFFF" />
+    <!-- ********************* Button Facebook ****************** -->
+
+    <Button
+        android:id="@+id/Facebook_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Sign_in_btn"
+        android:layout_marginTop="19dp"
+        android:width="70dp"
+        android:height="25dp"
+        android:background="#3C5A99"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:text="Facebook"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible" />
+
+
+
+</RelativeLayout>

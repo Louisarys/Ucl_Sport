@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sport_ucl">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- ************** Activity connexion ************** -->
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <!-- ************** Activity Formulaire d'inscription ************** -->
+
+
+        <!-- ************** Activity ??? ************** -->
+
+
+        <!-- ************** Activity Menu Principal ************** -->
+
+
+        <!-- ************** Activity SplashScreen ************** -->
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ************** Activity Planning ************** -->
+        <activity
+            android:name=".module.Planning"
+            android:label="Planning"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <!-- ************** Activity Sport favoris ************** -->
+        <activity
+            android:name=".module.SportFavoris"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <!-- ************** Activity Amis ************** -->
+        <activity
+            android:name=".module.Amis"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <!-- ************** Activity RDV ************** -->
+        <activity
+            android:name=".module.RendezVous"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <!-- ************** Activity ListDiscussion ************** -->
+        <activity
+            android:name=".module.ListDiscussion"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <!-- ************** Activity Discussion ************** -->
+        <activity
+            android:name=".module.Discussion"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+
+        <!-- ************** Activity Partager sa position ************** -->
+        <activity
+            android:name=".module.PartagerSaPosition"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".Gps"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".fragment.menu"
+            android:label="@string/title_activity_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".home"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".Administrator.Administrateur"
+            android:theme="@style/Theme.Design.NoActionBar"/>
+        <activity android:name=".Administrator.AddAdministrator"
+            android:theme="@style/Theme.Design.NoActionBar"/>
+        <activity android:name=".Administrator.DeleteAdministrator"
+            android:theme="@style/Theme.Design.NoActionBar" ></activity>
+    </application>
+
+</manifest>

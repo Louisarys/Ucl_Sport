@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/back_ucl_sport"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:padding="14dp" >
+
+
+        <!-- ******     DEBUT de la première ligne de la grille     ****** -->
+        <!-- ******     DEBUT du premier conteneur de la première ligne     ****** -->
+        <!-- Le conteneur va contenir un ImageButton servent à être dirigé
+             vers une activity particulière et un TextView pour indiquer au
+             User vers où il sera amené en cliquant sur le ImageButton -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <ImageButton
+                    android:id="@+id/fra_wolves_menu_facebook_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="wolvesMenuFacebookBtnClick"
+                    android:background="@drawable/ic_facebook" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Page Facebook"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ******     FIN du premier conteneur de la première ligne     ****** -->
+
+        <!-- ******     DEBUT du deuxième conteneur de la première ligne     ****** -->
+        <!-- Le conteneur va contenir un ImageButton servent à être dirigé
+             vers une activity particulière et un TextView pour indiquer au
+             User vers où il sera amené en cliquant sur le ImageButton -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/fra_wolves_menu_youtube_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="wolvesMenuYoutubeBtnClick"
+                    android:background="@drawable/ic_youtube" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chaine youtube"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ******     FIN du deuxième conteneur de la première ligne     ****** -->
+        <!-- ******     FIN de la première ligne de la grille     ****** -->
+
+
+        <!-- ******     DEBUT de la deuxième ligne de la grille     ****** -->
+        <!-- ******     DEBUT du premier conteneur de la deuxième ligne     ****** -->
+        <!-- Le conteneur va contenir un ImageButton servent à être dirigé
+             vers une activity particulière et un TextView pour indiquer au
+             User vers où il sera amené en cliquant sur le ImageButton -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/fra_wolves_menu_web_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentTop="false"
+                    android:onClick="wolvesMenuWebBtnClick"
+                    android:background="@drawable/ic_worldwide" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Site web"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ******     FIN du premier conteneur de la deuxième ligne     ****** -->
+
+        <!-- ******     DEBUT du deuxième conteneur de la deuxième ligne     ****** -->
+        <!-- Le conteneur va contenir un ImageButton servent à être dirigé
+             vers une activity particulière et un TextView pour indiquer au
+             User vers où il sera amené en cliquant sur le ImageButton -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/fra_wolves_menu_partenaire_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentTop="false"
+                    android:onClick="wolvesMenuPartenaireBtnClick"
+                    app:srcCompat="@drawable/ic_partner_ship"
+                    android:background="#00FFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No partenaire"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ******     FIN du deuxième conteneur de la deuxième ligne     ****** -->
+        <!-- ******     FIN de la deuxième ligne de la grille     ****** -->
+
+
+
+
+    </GridLayout>
+
+
+</RelativeLayout>

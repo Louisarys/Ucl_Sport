@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#001E3F</color>
+    <color name="colorPrimaryDark">#92C144</color>
+    <color name="colorAccent">#92C144</color>
+    <color name="colorUclGreen">#92C144</color>
+    <color name="colotUclGreenTransp">#4592C144</color>
+    <color name="colorUclWhite">#FFF</color>
+</resources>

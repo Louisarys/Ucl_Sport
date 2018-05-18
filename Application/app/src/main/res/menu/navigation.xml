@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_planning"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="Planning" />
+<!--
+    <item
+        android:id="@+id/navigation_favoris"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="Favoris" />
+
+    <item
+        android:id="@+id/navigation_amis"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="Amis" />
+
+    <item
+        android:id="@+id/navigation_rdv"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="Favoris" />
+    <item
+        android:id="@+id/navigation_discussions"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="Discussions" /> -->
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_notifications" />
+
+    <item
+        android:id="@+id/navigation_wolves"
+        android:icon="@drawable/ic_wolves_24dp"
+        android:title="Wolves"/>
+
+    <item
+        android:id="@+id/navigation_profil"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Profil"
+        />
+
+
+</menu>

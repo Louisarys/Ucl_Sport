@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+
+    <GridLayout
+        android:id="@+id/grille0"
+        android:columnCount="1"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center">
+
+
+    <GridLayout
+     android:id="@+id/grille1"
+     android:columnCount="3"
+     android:rowCount="1"
+     android:alignmentMode="alignMargins"
+     android:layout_weight="2"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_columnWeight="1"
+      android:layout_rowWeight="1"
+      android:gravity="center">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal|center_vertical"
+       android:orientation="vertical"
+       android:padding="5dp">
+
+    <TextView
+        android:id="@+id/txtSportSexe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="SEXE"
+        android:textSize="15dp"
+        android:textColor= "@color/colorUclWhite" />
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal|center_vertical"
+       android:orientation="vertical"
+       android:padding="5dp">
+
+    <TextView
+        android:id="@+id/txtSportLieu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="LIEU"
+        android:textSize="15dp"
+        android:textColor= "@color/colorUclWhite" />
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal|center_vertical"
+       android:orientation="vertical"
+       android:padding="5dp">
+
+    <TextView
+        android:id="@+id/txtSportSalle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="SALLE"
+        android:textSize="15dp"
+        android:textColor= "@color/colorUclWhite" />
+   </LinearLayout>
+  </LinearLayout>
+ </GridLayout>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="2"
+            android:gravity="center">
+
+    <GridLayout
+        android:id="@+id/grille2"
+        android:columnCount="4"
+        android:rowCount="1"
+        android:alignmentMode="alignMargins"
+        android:layout_below="@+id/grille1"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtSportJour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="JOUR"
+                    android:textSize="15dp"
+                    android:textColor= "@color/colorUclWhite" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtSportDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="DATE"
+                    android:textSize="15dp"
+                    android:textColor= "@color/colorUclWhite" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtSportHeureDebut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="HEURE DE DEBUT"
+                    android:textSize="15dp"
+                    android:textColor= "@color/colorUclWhite" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtSportHeureFin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="HEURE DE FIN"
+                    android:textSize="15dp"
+                    android:textColor= "@color/colorUclWhite" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </GridLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="3"
+            android:gravity="center">
+    <GridLayout
+        android:id="@+id/grille3"
+        android:columnCount="4"
+        android:rowCount="1"
+        android:alignmentMode="alignMargins"
+        android:layout_below="@+id/grille2"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtSportType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="TYPE"
+                    android:textSize="15dp"
+                    android:textColor= "@color/colorUclWhite" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtSportInscription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="INSCRIPTIONS"
+                    android:textSize="15dp"
+                    android:textColor= "@color/colorUclWhite" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtSportRemarques"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="REMARQUES"
+                    android:textSize="15dp"
+                    android:textColor= "@color/colorUclWhite" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtSportActive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:text="ACTIVE"
+                    android:textSize="15dp"
+                    android:textColor= "@color/colorUclWhite" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </GridLayout>
+        </LinearLayout>
+
+</GridLayout>
+
+
+
+</RelativeLayout>

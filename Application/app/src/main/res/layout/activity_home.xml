@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/back_ucl_sport"/>
+
+
+
+    <!-- ******     DEBUT Grid layout     ****** -->
+    <!-- Le GridLauout a pour but de créer une grille
+         dans ce cas si de 2 colonnes pour 3 lignes.-->
+
+    <GridLayout
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:id="@+id/gridLayout"
+        android:layout_alignParentLeft="true">
+
+
+        <!-- ******     DEBUT de la première ligne de la grille     ****** -->
+        <!-- ******     DEBUT du premier conteneur de la première ligne     ****** -->
+        <!-- Le conteneur va contenir un ImageButton servent à être dirigé
+             vers une activity particulière et un TextView pour indiquer au
+             User vers où il sera amené en cliquant sur le ImageButton -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <ImageButton
+                    android:id="@+id/Menu_planning_btn"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:srcCompat="@drawable/ic_menu_btn_planning"
+                    android:background="#00FFFFFF"
+                    android:foreground="@drawable/ripple_effect_oval"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Planning Sports"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ******     FIN du premier conteneur de la première ligne     ****** -->
+
+        <!-- ******     DEBUT du deuxième conteneur de la première ligne     ****** -->
+        <!-- Le conteneur va contenir un ImageButton servent à être dirigé
+             vers une activity particulière et un TextView pour indiquer au
+             User vers où il sera amené en cliquant sur le ImageButton -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/Menu_sport_favori_btn"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:srcCompat="@drawable/ic_menu_btn_sport_favori"
+                    android:background="#00FFFFFF"
+                    android:foreground="@drawable/ripple_effect_oval"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sports favoris"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ******     FIN du deuxième conteneur de la première ligne     ****** -->
+        <!-- ******     FIN de la première ligne de la grille     ****** -->
+
+
+        <!-- ******     DEBUT de la deuxième ligne de la grille     ****** -->
+        <!-- ******     DEBUT du premier conteneur de la deuxième ligne     ****** -->
+        <!-- Le conteneur va contenir un ImageButton servent à être dirigé
+             vers une activity particulière et un TextView pour indiquer au
+             User vers où il sera amené en cliquant sur le ImageButton -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/Menu_amis_btn"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/ic_menu_btn_amis" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amis"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ******     FIN du premier conteneur de la deuxième ligne     ****** -->
+
+        <!-- ******     DEBUT du deuxième conteneur de la deuxième ligne     ****** -->
+        <!-- Le conteneur va contenir un ImageButton servent à être dirigé
+             vers une activity particulière et un TextView pour indiquer au
+             User vers où il sera amené en cliquant sur le ImageButton -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/Menu_position_btn"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentTop="false"
+                    app:srcCompat="@drawable/ic_menu_btn_position"
+                    android:background="#00FFFFFF"
+                    android:foreground="@drawable/ripple_effect_oval" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Localisation des sports"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ******     FIN du deuxième conteneur de la deuxième ligne     ****** -->
+        <!-- ******     FIN de la deuxième ligne de la grille     ****** -->
+
+
+        <!-- ******     DEBUT de la troisième ligne de la grille     ****** -->
+        <!-- ******     DEBUT du premier conteneur de la troisième ligne     ****** -->
+        <!-- Le conteneur va contenir un ImageButton servent à être dirigé
+             vers une activity particulière et un TextView pour indiquer au
+             User vers où il sera amené en cliquant sur le ImageButton -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/admin_layout">
+
+                <ImageButton
+                    android:id="@+id/Menu_rdv_btn"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentTop="false"
+                    android:background="@drawable/ic_menu_btn_rdv"
+                    android:foreground="@drawable/ripple_effect_oval"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ******     FIN du premier conteneur de la troisième ligne     ****** -->
+
+        <!-- ******     DEBUT du deuxième conteneur de la troisième ligne     ****** -->
+        <!-- Le conteneur va contenir un ImageButton servent à être dirigé
+             vers une activity particulière et un TextView pour indiquer au
+             User vers où il sera amené en cliquant sur le ImageButton -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/Menu_discussion_btn"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentTop="false"
+                    android:foreground="@drawable/ripple_effect_oval"
+                    android:background="@drawable/ic_menu_btn_discussion" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Discussions"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ******     FIN du deuxième conteneur de la troisième ligne     ****** -->
+        <!-- ******     FIN de la troisième ligne de la grille     ****** -->
+    </GridLayout>
+
+    <Button
+        android:id="@+id/test_val_test_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary" />
+    <!-- ******     FIN Grid layout     ****** -->
+
+</RelativeLayout>
+

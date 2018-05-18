@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "52896942721",
+    "firebase_url": "https://ucl-sport.firebaseio.com",
+    "project_id": "ucl-sport",
+    "storage_bucket": "ucl-sport.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52896942721:android:99691fd0ef7aa498",
+        "android_client_info": {
+          "package_name": "com.sport_ucl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52896942721-2oubgbugnq40ljlih8rdv2kj3tq8d2km.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sport_ucl",
+            "certificate_hash": "b837c186c076386c173a0a06533c4731e6c10d0c"
+          }
+        },
+        {
+          "client_id": "52896942721-95qpd13k2aaabq28lt45nn6d3e89vmcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA3NjIjqyizBNkGl1SytGwB-WXV8puFK0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52896942721-95qpd13k2aaabq28lt45nn6d3e89vmcf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
